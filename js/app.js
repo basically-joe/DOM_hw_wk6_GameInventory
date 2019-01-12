@@ -15,12 +15,16 @@ const handleNewGameFormSubmit = function(event) {
 };
 
 const createGameInventoryItem = function(form) {
-  const gameInventoryItem = document.createElement("li");
+  const gameInventoryItem = document.createElement("ul");
   gameInventoryItem.classList.add("game-inventory-item");
 
-  const title = document.createElement('h2');
+  const title = document.createElement('li');
   title.textContent = form.title.value;
   gameInventoryItem.appendChild(title);
+
+  const category = document.createElement("li");
+  category.textContent = form.category.value;
+  gameInventoryItem.appendChild(category);
 
   return gameInventoryItem;
 };
