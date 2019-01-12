@@ -34,6 +34,10 @@ const createGameInventoryItem = function(form) {
   pegi.textContent = form.pegi.value;
   gameInventoryItem.appendChild(pegi);
 
+  const console = document.createElement("li");
+  console.textContent = form.console.value;
+  gameInventoryItem.appendChild(console);
+
   return gameInventoryItem;
 };
 
