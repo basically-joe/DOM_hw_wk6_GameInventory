@@ -3,6 +3,9 @@ html {
   color: white;
   height: 100%;
   font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
 }
 
 #game-inventory {
@@ -18,13 +21,45 @@ html {
   background: white;
   opacity: 0.7;
   list-style: none;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 h3 {
   color: #5C3384;
   padding: none;
+  text
 }
 
 li {
   color: #5C3384;
+}
+
+#form-wrapper .pegi-item, .title-item, .category-item {
+  padding-top: 5px;
+	display:flex;
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+#form-wrapper .pegi-item:last-child, .title-item, .category-item {
+font-family: 'Lato', 'Arial', sans-serif;
+}
+
+select {
+	/* font-family: 'Lato'; */
+	margin: 5px;
+	height:32px;
+	border-radius:20px;
+	width:220px;
+	font-size: 80%;
+	color: #333333;
+}
+
+.title-item input {
+	/* font-family: 'Lato'; */
+	margin: 5px;
+	height:32px;
+	border-radius:20px;
+	width:220px;
+	font-size: 80%;
+	color: #333333;
 }

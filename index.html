@@ -10,14 +10,14 @@
 <body>
   <form id="new-game-form">
     <div id="form-wrapper">
-      <div class="form-item">
-        <label for="title" class="primary">Title</label>
-        <input type="text" id="title" required/>
+      <div class="title-item">
+        <label for="title" class="primary"></label>
+        <input placeholder="Title" type="text" id="title" required/>
       </div>
-      <div class="form-item">
-        <label for="category" class="primary">Category</label>
+      <div class="category-item">
+        <label for="category" class="primary"></label>
         <select id="category">
-          <option value="" disabled selected></option>
+          <option value="" disabled selected>Select category</option>
           <option value="RPG">RPG</option>
           <option value="FPS">FPS</option>
           <option value="MMO">MMO</option>
@@ -26,10 +26,10 @@
           <option value="Simulation">Simulation</option>
         </select>
       </div>
-      <div class="form-item">
-        <label for="pegi" class="primary">PEGI rating</label>
+      <div class="pegi-item">
+        <label for="pegi" class="primary"></label>
         <select id="pegi">
-          <option value="" disabled selected></option>
+          <option value="" disabled selected>Select PEGI</option>
           <option value="PEGI-3">PEGI 3</option>
           <option value="PEGI-7">PEGI 7</option>
           <option value="PEGI-12">PEGI 12</option>
@@ -37,7 +37,7 @@
           <option value="PEGI-18">PEGI 18</option>
         </select>
       </div>
-      <div class="form-item">
+      <div class="radial-item">
         <input type="radio" id="consoleChoice1"
         name="console" value="PS4">
         <label for="consoleChoice1">PS4</label>
