@@ -12,6 +12,7 @@ const handleNewGameFormSubmit = function(event) {
   const inventoryItem = document.querySelector('#game-inventory');
   inventoryItem.appendChild(gameInventoryItem);
 
+  event.target.reset();
 };
 
 const createGameInventoryItem = function(form) {
