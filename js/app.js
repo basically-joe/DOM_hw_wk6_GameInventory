@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const newGameForm = document.querySelector("#new-game-form");
   newGameForm.addEventListener("submit", handleNewGameFormSubmit);
+
+  const deleteAllButton = document.querySelector("#delete-all");
+  deleteAllButton.addEventListener("click", handleDeleteAllClick);
 });
 
 const handleNewGameFormSubmit = function(event) {
@@ -32,4 +35,9 @@ const createGameInventoryItem = function(form) {
   gameInventoryItem.appendChild(pegi);
 
   return gameInventoryItem;
+};
+
+const handleDeleteAllClick = function(event) {
+  const inventoryItem = document.querySelector('#game-inventory');
+  inventoryItem.innerHTML = '';
 };
