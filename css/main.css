@@ -1,0 +1,30 @@
+html {
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  color: white;
+  height: 100%;
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+#game-inventory {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.game-inventory-item {
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  background: white;
+  opacity: 0.7;
+  list-style: none;
+}
+
+h3 {
+  color: #5C3384;
+  padding: none;
+}
+
+li {
+  color: #5C3384;
+}

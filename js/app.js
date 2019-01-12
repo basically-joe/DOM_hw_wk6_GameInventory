@@ -22,7 +22,7 @@ const createGameInventoryItem = function(form) {
   const gameInventoryItem = document.createElement("ul");
   gameInventoryItem.classList.add("game-inventory-item");
 
-  const title = document.createElement('li');
+  const title = document.createElement('h3');
   title.textContent = form.title.value;
   gameInventoryItem.appendChild(title);
 
