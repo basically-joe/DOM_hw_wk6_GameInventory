@@ -26,5 +26,9 @@ const createGameInventoryItem = function(form) {
   category.textContent = form.category.value;
   gameInventoryItem.appendChild(category);
 
+  const pegi = document.createElement("li");
+  pegi.textContent = form.pegi.value;
+  gameInventoryItem.appendChild(pegi);
+
   return gameInventoryItem;
 };
